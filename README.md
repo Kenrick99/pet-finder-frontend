@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# pet-finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a frontend page for a petfinder app, it is built with react.js.
 
-## Available Scripts
+## Getting Started
 
 In the project directory, you can run:
 
