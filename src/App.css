@@ -1,38 +1,431 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&family=Lora:ital,wght@1,700&family=MonteCarlo&family=Smokum&family=Tilt+Prism&display=swap');
+.pet {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.pet img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.pet {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+.pets-container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.pet-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.pet {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pet img {
+  width: 100%; height: auto;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.home-container {
+  /* background-image: url(''); */
+  background-size: cover;
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.home-features img {
+  max-width: 100%;
+  height: auto;
+}
+
+.home-banner {
+  background-color: #f9c646;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.home-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 100%;
+}
+
+.feature {
+  flex-basis: 20rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+@media (max-width: 768px) {
+  .feature {
+    flex-basis: calc(50% - 1rem);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Set the background color of the body to a light gray */
+body {
+  background-color: #f2f2f2;
+  font-family: 'Abril Fatface', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lora', serif;
+font-family: 'MonteCarlo', cursive;
+font-family: 'Smokum', cursive;
+font-family: 'Tilt Prism', cursive;
+}
+
+/* Center the main content */
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100%;
+}
+
+/* Set the width of the container */
+.container .content {
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Style the images */
+.container .content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+
+.add-pet-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-pet-form h2 {
+  margin-top: 0;
+}
+
+.add-pet-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.add-pet-form input[type="text"],
+.add-pet-form input[type="number"] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.add-pet-form input[type="text"]:focus,
+.add-pet-form input[type="number"]:focus {
+  outline: none;
+  border-color: #0077ff;
+}
+
+.add-pet-form button[type="submit"] {
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-pet-form button[type="submit"]:hover {
+  background-color: #0053ba;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c62828;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #3e8e41;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 400px; /* Change the width as desired */
+  position: relative;
+}
+
+.search-icon {
+  display: none;
+}
+
+
+.search-button {
+      position: absolute;
+      background: #fff;
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: 50%;
+      font-size: 20px;
+      top:0;
+      right: 0;
+      outline: none;
+      color: #CC3A81;
+      transition: all 0.5s ease;
+    }
+
+
+.search-button:hover {
+  background-color: #0062cc;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+}
+.pet-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.pet-image {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.pet-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pet-info {
+  margin-bottom: 5px;
+}
+
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.signup-form__label {
+  margin-bottom: 1rem;
+}
+
+.signup-form__input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.signup-form__button {
+  padding: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.signup-form__button:hover {
+  background-color: #0069d9;
+}
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin: 0 10px;
+}
+
+li:first-child {
+  margin-left: 0;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+.navbar ul li:nth-child(3) {
+  flex-grow: 1;
+}
+
+.navbar ul li:nth-child(3) form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.navbar ul li:nth-child(3) input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.navbar ul li:nth-child(3) button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
