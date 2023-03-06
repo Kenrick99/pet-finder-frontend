@@ -4,14 +4,14 @@ function AvailablePets() {
   const [pets, setPets] = useState([]);
 
   useEffect(() => {
-    fetch('https://dorothy-sinatra-petfinder.onrender.com/pets/available')
+    fetch('https://kenrick-sinatra.onrender.com/pets/available')
       .then(response => response.json())
       .then(data => setPets(data))
       .catch(error => console.error(error));
   }, []);
 
   const handleAdopt = (petId) => {
-    fetch(`https://dorothy-sinatra-petfinder.onrender.com/pets/${petId}`, {
+    fetch(`https://kenrick-sinatra.onrender.com/pets/${petId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
