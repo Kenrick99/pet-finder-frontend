@@ -1,11 +1,11 @@
-import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Pets from './components/Pets';
 import Home from './components/Home';
 import SearchForm from './components/SearchForm';
 import AddPetForm from './components/AddPetForm';
 import SignupForm from './components/SignupForm';
 import LoginForm from './components/LoginForm';
+import './App.css';
+import Pets from './components/Pets';
 
 
 function App() {

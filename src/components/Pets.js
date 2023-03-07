@@ -4,7 +4,7 @@ function Pets() {
   const [pets, setPets] = useState([]);
 
   useEffect(() => {
-    fetch('https://dorothy-sinatra-petfinder.onrender.com/pets')
+    fetch('https://kenrick-sinatra.onrender.com/pets')
       .then((response) => response.json())
       .then((data) => setPets(data))
       .catch((error) => console.error(error));

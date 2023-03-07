@@ -6,7 +6,7 @@ function Home() {
     <div className="home-container">
       <div className="home-banner">
         <h1>Welcome to Pet Finder!</h1>
-        <p>Find your perfect furry friend today.</p>
+        <p>Find your perfect furry friend.</p>
         <Link to="/pets" className="btn btn-primary">
           See Available Pets
         </Link>

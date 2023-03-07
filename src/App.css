@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&family=Lora:ital,wght@1,700&family=MonteCarlo&family=Smokum&family=Tilt+Prism&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&family=Lora:ital,wght@1,700&family=MonteCarlo&family=Smokum&family=Tilt+Prism&display=swap'); */
 .pet {
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   margin-bottom: 10px;
   padding: 10px;
 }
@@ -60,7 +60,7 @@
   padding: 1rem;
 }
 .home-container {
-  /* background-image: url(''); */
+  background-image: url('https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg');
   background-size: cover;
   background-position: center;
 }
@@ -71,8 +71,8 @@
 }
 
 .home-banner {
-  background-color: #f9c646;
-  color: #fff;
+  background-color: #88f946;
+  color: rgb(14, 10, 10);
   padding: 2rem;
   text-align: center;
   border-radius: 0.5rem;
@@ -89,7 +89,7 @@
 
 .feature {
   flex-basis: 20rem;
-  border: 1px solid #ddd;
+  border: 1px solid rgb(221, 221, 221);
   border-radius: 0.5rem;
   padding: 1rem;
   text-align: center;
@@ -186,11 +186,11 @@ font-family: 'Tilt Prism', cursive;
 .add-pet-form input[type="text"]:focus,
 .add-pet-form input[type="number"]:focus {
   outline: none;
-  border-color: #0077ff;
+  border-color: #ff00b3;
 }
 
 .add-pet-form button[type="submit"] {
-  background-color: #0077ff;
+  background-color: #d400ff;
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -292,7 +292,7 @@ button:hover {
 
 
 .search-button:hover {
-  background-color: #0062cc;
+  background-color: #cc8b00;
 }
 
 .error-message {
@@ -429,3 +429,5 @@ li a:hover {
   cursor: pointer;
   font-size: 16px;
 }
+
+

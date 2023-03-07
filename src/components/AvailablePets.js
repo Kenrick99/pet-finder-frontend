@@ -11,7 +11,7 @@ function AvailablePets() {
   }, []);
 
   const handleAdopt = (petId) => {
-    fetch(`https://kenrick-sinatra.onrender.com/pets/${petId}`, {
+    fetch(`https://kenrick-sinatra.onrender.com/${petId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
